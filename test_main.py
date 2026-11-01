@@ -30,4 +30,4 @@ def test_analyze_empty():
 def test_analyze_missing_field():
     # 故意不传 text，测试 FastAPI 的内置校验
     response = client.post("/analyze", json={}) 
-    assert response.status_code == 422  # 422 是 FastAPI 默认的请求体校验错误码
+    assert response.status_code == 422  # 422 是 FastAPI 默认的请求体校验错误码p
