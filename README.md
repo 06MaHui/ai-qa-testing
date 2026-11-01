@@ -1,4 +1,4 @@
-# AI QA Testing Project
+# AI QA Testing Project[![Automated Tests](https://github.com/06MaHui/ai-qa-testing/actions/workflows/test.yml/badge.svg)](https://github.com/06MaHui/ai-qa-testing/actions/workflows/test.yml)
 
 一个用于测试开发实习准备的综合实战项目，包含 FastAPI 后端接口开发、完整的 Pytest 自动化测试体系、以及针对 AI 接口的 Mock 测试实践。
 
