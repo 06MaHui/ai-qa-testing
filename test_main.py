@@ -31,3 +31,9 @@ def test_analyze_missing_field():
     # 故意不传 text，测试 FastAPI 的内置校验
     response = client.post("/analyze", json={}) 
     assert response.status_code == 422  # 422 是 FastAPI 默认的请求体校验错误码p
+
+def test_chat_mock():
+    response = client.post("/chat",json={"prompt": "怎么测试AI？"})
+    assert response.status_code == 200
+    assert "【来自AI的回复】" in response.json()["reply"]
+    assert response.json()["model"] == "mock-gpt-3.5"
